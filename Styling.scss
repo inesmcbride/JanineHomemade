@@ -1,6 +1,54 @@
 $font: 'Anonymous Pro', monospace;
-$fontcolour: #090952;
+$brandcolour: #090952;
 $MenuFontSize: 28px;
+
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+  @media (min-width: 768px){
+      display: none;
+    }
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  font-family: $font;
+  color: $brandcolour;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: white;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: white;
+  color: white;
+}
 
 #Logo{
   width: 100%;
@@ -10,15 +58,25 @@ $MenuFontSize: 28px;
 }
 
 .menu{
-  border-bottom: #090952 solid 3px;
+  display: none;
+  a{
+    display: none;
+  }
+  @media (min-width: 768px){
+  border-bottom: $brandcolour solid 2px;
    a{
+     display: flex;
     font-family: $font;
-    color: $fontcolour;
+    color: $brandcolour;
      font-size: $MenuFontSize;
     } 
   a:hover{
     text-decoration: none;
-    font-weight: 550;
+    color: slategrey;
+//    font-weight: 550;
+//    padding-top: 10px;
+//    border-top: $brandcolour solid 1px;
+  }
   }
 }
 
@@ -49,30 +107,29 @@ $MenuFontSize: 28px;
   font-weight: 500;
 }
 
-btn.outline {
-	background: none;
-	padding: 12px 22px;
+.btn.btn-outline{
+  color: $brandcolour;
+  border-color: $brandcolour;
 }
 
-.btn-primary.outline {
-	border: 2px solid #0099cc;
-	color: #0099cc;
+.btn:hover{
+  background-color: $brandcolour;
+  color: white;
 }
 
-btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
-	color: #33a6cc;
-	border-color: #33a6cc;
-}
-.btn-primary.outline:active, .btn-primary.outline.active {
-	border-color: #007299;
-	color: #007299;
-	box-shadow: none;
+.footer{
+  border-top: solid 2px $brandcolour;
+  margin-top: 20px;
 }
 
-//@media (min-width: 768px) { 
-//  #mobileImage{
-//  display: none;
-//}
-//  #desktopImage{
-//  display: block;
-//}
+.fab{
+  color: $brandcolour;
+  padding: 10px;
+}
+
+.carousel{
+  margin-top: 20px;
+  width: 70%;
+  overflow: hidden;
+  object-position: 0% 50%;
+}

@@ -1,3 +1,52 @@
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .topnav {
+    display: none;
+  }
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  font-family: "Anonymous Pro", monospace;
+  color: #090952;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: white;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: white;
+  color: white;
+}
+
 #Logo {
   width: 100%;
 }
@@ -8,16 +57,25 @@
 }
 
 .menu {
-  border-bottom: #090952 solid 3px;
+  display: none;
 }
 .menu a {
-  font-family: "Anonymous Pro", monospace;
-  color: #090952;
-  font-size: 28px;
+  display: none;
 }
-.menu a:hover {
-  text-decoration: none;
-  font-weight: 550;
+@media (min-width: 768px) {
+  .menu {
+    border-bottom: #090952 solid 2px;
+  }
+  .menu a {
+    display: flex;
+    font-family: "Anonymous Pro", monospace;
+    color: #090952;
+    font-size: 28px;
+  }
+  .menu a:hover {
+    text-decoration: none;
+    color: slategrey;
+  }
 }
 
 #mobileImage {
@@ -52,25 +110,31 @@
   font-weight: 500;
 }
 
-btn.outline {
-  background: none;
-  padding: 12px 22px;
+.btn.btn-outline {
+  color: #090952;
+  border-color: #090952;
 }
 
-.btn-primary.outline {
-  border: 2px solid #0099cc;
-  color: #0099cc;
+.btn:hover {
+  background-color: #090952;
+  color: white;
 }
 
-btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
-  color: #33a6cc;
-  border-color: #33a6cc;
+.footer {
+  border-top: solid 2px #090952;
+  margin-top: 20px;
 }
 
-.btn-primary.outline:active, .btn-primary.outline.active {
-  border-color: #007299;
-  color: #007299;
-  box-shadow: none;
+.fab {
+  color: #090952;
+  padding: 10px;
+}
+
+.carousel {
+  margin-top: 20px;
+  width: 70%;
+  overflow: hidden;
+  object-position: 0% 50%;
 }
 
 /*# sourceMappingURL=JHStyling.css.map */

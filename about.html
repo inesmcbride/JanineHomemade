@@ -7,26 +7,40 @@
   <link rel="icon" type="image/png" sizes="96x96" href="Images/favicon-96x96.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700|Cinzel:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 
 <body>
+  <div class="topnav">
+  <p href="#home" class="active">JanineHomemade</p>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks" class="text-center">
+    <a href="about.html">ABOUT</a>
+    <a href="prices.html">PRICES</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
   <div class="container">
     <div class="col-sm-12 col-md-10 offset-md-1 text-center logo">
       <a href="index.html"><img src="Images/JanineHomemadeLogo.png" alt="Janine Homemade Logo" id="Logo"></a>
     </div>
   </div>
   <div class="menu col-md-6 offset-md-3 row text-center align-items-center">
-    <div class="col-md-4">
+    <div class="col-md-4 align-items-center">
       <a href="about.html">ABOUT</a>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 align-items-center">
       <a href="prices.html">PRICES</a>
     </div>
     <div class="col-md-4">
       <a href="contact.html">CONTACT</a>
     </div>
   </div>
-  <div class="col-sm-12 col-md-10 offset-md-1 AboutSection row">
+  <div class="col-12 col-md-10 offset-md-1 AboutSection row">
     <div class="col-md-6">
       <img src="Images/AboutLeft.jpg" width="100%">
       </div>
@@ -35,4 +49,22 @@
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
     </div>
   </div>
+  <div class="footer col-8 offset-2 col-md-6 offset-md-3 row text-center align-items-center">
+    <div class="col-md-4 offset-md-4">
+      <a href="https://www.facebook.com/janinehomemade/"><i class="fab fa-facebook-f fa-2x"></i></a>
+    <a href="https://www.instagram.com/janinehomemade_platters/"><i class="fab fa-instagram fa-2x"></i></a>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+  <script>function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}</script>
 </body>
