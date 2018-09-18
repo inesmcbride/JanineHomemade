@@ -65,7 +65,7 @@ $MenuFontSize: 28px;
   @media (min-width: 768px){
   border-bottom: $brandcolour solid 2px;
    a{
-     display: flex;
+     display: block;
     font-family: $font;
     color: $brandcolour;
      font-size: $MenuFontSize;
