@@ -1,5 +1,6 @@
-$font: 'Anonymous Pro', monospace;
+$font: 'Montserrat', monospace;
 $brandcolour: #090952;
+$secondarycolour: #06a7e0;
 $MenuFontSize: 28px;
 
 
@@ -39,9 +40,8 @@ $MenuFontSize: 28px;
 
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
-  color: black;
+  color: $secondarycolour;
   text-decoration: none;
-  font-weight: 600;
 }
 
 /* Style the active link (or home/logo) */
@@ -72,7 +72,7 @@ $MenuFontSize: 28px;
     } 
   a:hover{
     text-decoration: none;
-    color: slategrey;
+    color: $secondarycolour;
 //    font-weight: 550;
 //    padding-top: 10px;
 //    border-top: $brandcolour solid 1px;
@@ -120,6 +120,11 @@ $MenuFontSize: 28px;
 .footer{
   border-top: solid 2px $brandcolour;
   margin-top: 20px;
+  a:hover{
+    .fab{
+    color: $secondarycolour;
+    }
+  }
 }
 
 .fab{
@@ -132,4 +137,20 @@ $MenuFontSize: 28px;
   width: 70%;
   overflow: hidden;
   object-position: 0% 50%;
+}
+
+.AboutSection{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  @media (min-width: 768px) {
+    margin-left: 5rem !important;
+    margin-right: 5rem !important;
+  }
+}
+
+.secondaryCol{
+  padding-top: 20px;
+  @media (min-width: 768px) {
+    padding-top: 0px;
+  }
 }

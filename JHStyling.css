@@ -17,7 +17,7 @@
 
 /* Style navigation menu links */
 .topnav a {
-  font-family: "Anonymous Pro", monospace;
+  font-family: "Montserrat", monospace;
   color: #090952;
   padding: 14px 16px;
   text-decoration: none;
@@ -36,9 +36,8 @@
 
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
-  color: black;
+  color: #06a7e0;
   text-decoration: none;
-  font-weight: 600;
 }
 
 /* Style the active link (or home/logo) */
@@ -68,13 +67,13 @@
   }
   .menu a {
     display: block;
-    font-family: "Anonymous Pro", monospace;
+    font-family: "Montserrat", monospace;
     color: #090952;
     font-size: 28px;
   }
   .menu a:hover {
     text-decoration: none;
-    color: slategrey;
+    color: #06a7e0;
   }
 }
 
@@ -124,6 +123,9 @@
   border-top: solid 2px #090952;
   margin-top: 20px;
 }
+.footer a:hover .fab {
+  color: #06a7e0;
+}
 
 .fab {
   color: #090952;
@@ -137,4 +139,24 @@
   object-position: 0% 50%;
 }
 
-/*# sourceMappingURL=JHStyling.css.map */
+.AboutSection {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+@media (min-width: 768px) {
+  .AboutSection {
+    margin-left: 5rem !important;
+    margin-right: 5rem !important;
+  }
+}
+
+.secondaryCol {
+  padding-top: 20px;
+}
+@media (min-width: 768px) {
+  .secondaryCol {
+    padding-top: 0px;
+  }
+}
+
+/*# sourceMappingURL=JHstyling.css.map */
